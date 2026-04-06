@@ -1,4 +1,4 @@
-# Finance Dashboard API
+# Finance Dashboard System - Finance Data Processing and Access Control Backend
 
 A role-based financial records management system built with **FastAPI**, **SQLAlchemy**, and **MySQL**. Designed as a backend-only REST API with JWT authentication, tiered access control, and dashboard analytics endpoints.
 
