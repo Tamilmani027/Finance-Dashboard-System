@@ -346,4 +346,4 @@ MySQL was chosen for local familiarity. PostgreSQL is generally preferred in pro
 
 ## Author
 
-Built by **Mani** as a portfolio/learning project demonstrating backend API design with FastAPI, SQLAlchemy, and role-based access control.
+Built by **Tamilmani C** as a portfolio/learning project demonstrating backend API design with FastAPI, SQLAlchemy, and role-based access control.
