@@ -49,6 +49,22 @@ def get_current_user(token: str = Depends(oauth2_scheme), db = Depends(get_db)):
         )
 
 
+def require_admin(current_user=Depends(get_current_user)):
+    if current_user.role_id!=3:
+        raise HTTPException(
+            status_code=403,
+            detail="Admin access required"
+        )
+    return current_user
+
+def require_analyst(current_user=Depends(get_current_user)):
+    if current_user.role_id not in [2,3]:
+        raise HTTPException(status_code=403, detail="Analyst access required")
+    return current_user
+def require_viewer(current_user=Depends(get_current_user)):
+    if current_user.role_id not in [1,2,3]:
+        raise HTTPException(status_code=403, detail="Viewer access required")
+    return current_user
 
 
 
